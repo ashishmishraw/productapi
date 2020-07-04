@@ -3,7 +3,7 @@ Contributors: [mishra.ashish@icloud.com](https://github.com/ashishmishraw)
 
 ### Description
 RESTful service that can retrieve product and price details by ID.
-* Performs retrieval of the given product name from an redsky.target.com PDP service
+* Performs retrieval of the given product name from redsky.target.com PDP service
 * Performs retrieval of given product price from hosted Pricing service
 * Returns the product details
 
