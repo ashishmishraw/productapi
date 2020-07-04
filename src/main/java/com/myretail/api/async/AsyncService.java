@@ -89,7 +89,7 @@ public class AsyncService {
             response = restTemplate.exchange(extUri, HttpMethod.GET, request, String.class);
         } catch ( HttpClientErrorException ex) {
             if ( null == response ) {
-                response = new ResponseEntity(HttpStatus.NOT_FOUND);
+                response = new ResponseEntity(HttpStatus.NOT_FOUND);// in case of NO_CONTENT
             }
             if ( response.getStatusCode()== HttpStatus.NOT_FOUND) {
                 throw new ProductNotFoundException("Requested Product Not Found");
