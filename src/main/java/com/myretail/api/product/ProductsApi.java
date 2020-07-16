@@ -21,7 +21,7 @@ public interface ProductsApi {
     })
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Details about the product by ID", response = Product.class),
-            @ApiResponse(code = 200, message = "Unexpected error", response = ApiError.class)
+            @ApiResponse(code = 404, message = "Product not found", response = ApiError.class)
     })
     @RequestMapping(value = "/products/{id}", produces = { "application/json" }, method = RequestMethod.GET)
     ResponseEntity<Product> findProductById(
